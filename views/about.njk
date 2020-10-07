@@ -1,0 +1,21 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Sobre - Gustavo Azevedo</title>
+
+{% endblock %}
+
+{% block content %}
+
+    <section id="sobre" class="sobre">
+        <div class=" my-5 text-center">
+            <img class=" mb-3 img-sobre" src="https://scontent.fcgh35-1.fna.fbcdn.net/v/t1.0-9/120166431_3130611573733180_2043201322239063520_n.jpg?_nc_cat=109&_nc_sid=09cbfe&_nc_ohc=_kpuxY5BVpAAX-OysWJ&_nc_ht=scontent.fcgh35-1.fna&oh=c5632ad97b0d6b73c5ce07f37c4401fb&oe=5FA297B8" alt="gustavo azevedo">
+            <h1 class=" mb-2 title">{{about.name}}</h1>
+            <h2 class=" mb-2 sub-title">{{about.role}}</h2>
+            <p class=" description text-white">{{about.description}}</p>
+        </div>
+    </section>
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        {% block head %}
+            <title>Gustavo Azevedo</title>
+
+        {% endblock %}
+        <link rel="stylesheet" href="/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&family=Nunito&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <header>
+            <nav class=" bg-purple container-menu">
+                <ul class="text-center menu-link">
+                    <li class=" item-menu ">
+                        <a class=" p-menu" href="/">Sobre</a>
+                    </li>
+                    <li class=" item-menu ">
+                        <a class=" p-menu" href="/portfolio">Trabalhos</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        {% block content %}{% endblock %}
+
+        <footer class="p-menu menu-footer bg-purple mt-5">
+            <div class="line-down text-center ">
+                <a class=" mx-3" href="https://bitbucket.org/GustaAzevedo/" target=" blank">Bitbucket</a>
+                <a class=" mx-3" href="https://www.linkedin.com/in/gustavo-azevedo-6384821b6/" target="blank">Linkedin</a>
+                <a class=" mx-3 " href="https://www.instagram.com/gusta.azevdo/" target="blank">Instagram</a>
+            </div>
+
+        </footer>
+
+    </body>
+
+</html>

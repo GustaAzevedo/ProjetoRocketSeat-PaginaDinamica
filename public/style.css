@@ -1,0 +1,229 @@
+/*--------------------------------- Formatação Browser ----------------------------------*/
+*{
+    margin: 0px ; 
+    padding: 0px ;
+    border: 0px ;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px ;
+
+}
+
+:root {
+    --light-yellow: #FFD429;
+    --yellow: #FCCB20;
+    --dark-yellow: #DCA10A;
+    --purple: #6F0FAB;
+    --dark-purple: #4C038C;
+    --ice-white: #F2F2F2;
+
+}
+body {
+    background-color: var(--purple);
+}
+
+/*------------------------------------------- DEFAULT -------------------------------------------*/
+.mb-2{
+    margin: 0 0 20px 0;
+}
+
+.mb-3{
+    margin: 0 0 30px 0;
+}
+
+.mb-5{
+    margin: 0 0 50px 0;
+}
+
+.mt-2{
+    margin: 20px 0 0 0;
+}
+
+.mt-3{
+    margin: 30px 0 0 0;
+}
+
+.mt-5{
+    margin: 50px 0 0 0;
+}
+
+.my-5{
+    margin: 50px 0 50px 0;
+}
+
+.mx-2{
+    margin: 0 20px;
+}
+
+.mx-3{
+    margin: 0 30px;
+}
+
+.bg-purple{
+    background-color: var(--dark-purple);
+}
+
+.text-white{
+    color: var(--ice-white);
+}
+
+.text-center{
+    text-align: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.m-auto{
+    margin: auto;
+}
+
+/*--------------------------------------------- MENU --------------------------------------------------*/
+.container-menu{
+    padding: 30px;
+    flex-direction: row;
+    
+}
+
+.menu-link a{
+    color: #ffffff;
+    font-family: 'Balsamiq Sans', cursive;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu-link a:hover{
+    color: var(--light-yellow);
+    background-color: var(--purple);
+    transition: color 0.5s;
+}
+
+.item-menu{
+    display: inline;
+}
+
+.p-menu{
+    padding: 30px;
+}
+
+/*-------------------------------------------- SOBRE --------------------------------------------------*/
+.sobre{
+    margin: 0 auto;
+    max-width: 500px;
+    min-height: calc(100vh - 224px);
+}
+
+.img-sobre{
+    height: 400px;
+    border-radius: 50%;
+    border: solid 5px var(--dark-yellow);
+}
+
+.title{
+    font-family: 'Balsamiq Sans', cursive;
+    color: var(--ice-white);
+    font-size: 50px;
+
+}
+
+.sub-title{
+    font-family: 'Balsamiq Sans', cursive;
+    color:  var(--ice-white);
+    font-size: 35px;
+}
+
+
+/*------------------------------------------- FOOTER ------------------------------------------------*/
+.menu-footer a{
+    color: #ffffff;
+    font-family: 'Balsamiq Sans', cursive;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu-footer a:hover{
+    color: var(--dark-yellow);
+}
+
+.line-down a{
+    border-bottom: 3px solid var(--dark-yellow);
+}
+
+/*------------------------------------------------------------------------- TRABALHOS.HTML -----------------------------------------------------------------------------------------*/
+.kards{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.kard{
+    background-color: var(--dark-yellow);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.kard-container {
+    width: 400px;
+}
+    
+.kard-container img{
+    width: 100%;
+}
+
+.kard-info,
+.kard-content{
+    padding: 20px;
+}
+
+.kard-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.kard-price{
+    background-color: var(--dark-yellow);
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/*-------------------------------------- Featured ------------------------------------------*/
+.kard-container{
+    position: relative;
+}
+.featured{
+    background-color: var(--ice-white);
+    color: var(--dark-purple);
+    position: absolute;
+    top: -10px;
+    right: 0;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/*------------------------------------ VIDEO PAGE ----------------------------------------------*/
+.video{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.video .kard{
+    cursor: initial;
+}
+
+.kard-video-container{
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.kard-video-container iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
